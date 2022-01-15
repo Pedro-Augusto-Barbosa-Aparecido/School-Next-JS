@@ -33,8 +33,6 @@ export default class MyDocument extends Document {
     crossOrigin="anonymous"/>
 
                     <link rel="shortcut icon" href="/favicon.ico" type="image/png"/>
-
-                    <title>School 4k</title>
                 </Head>
                 <body>
                     <Main />
