@@ -1,12 +1,12 @@
 import '../styles/globals.css'
-import Header from "./components/Header/header";
+import Header from "./src/components/Header/header";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-          <title>School 4k</title>
+          <title>Moodle</title>
       </Head>
       <Header />
       <Component {...pageProps} />

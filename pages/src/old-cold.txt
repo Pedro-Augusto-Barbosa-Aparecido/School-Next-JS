@@ -1,12 +1,39 @@
-.container {
-    width: 100%;
-    height: 70px;
+<>
+    <Image
+        src={"/assets/code-school-symbol-sketch.png"}
+        alt={"Logo"}
+        width={32}
+        height={32}
+        layout={"fixed"}
+        id={"logo"}
+    />
+    <Link href={"/"}>
+        <a className={styles.title}>Coding School 4k</a>
+    </Link>
+</>
+<div id={"back-menu"} onClick={toggleMenu} className={styles.menuOptAux} />
+<div id={"menu"} className={styles.menuOpt}>
+    <ul>
+        <li>
+            <Link href={"/"}>
+                <a onClick={closeMenu}>Home</a>
+            </Link>
+        </li>
+        <li>
+            <Link href={"/contact-us"}>
+                <a onClick={closeMenu}>Contact us</a>
+            </Link>
+        </li>
+        <li>
+            <Link href={"/support/help/"}>
+                <a onClick={closeMenu}>Help</a>
+            </Link>
+        </li>
+    </ul>
+</div>
+<i onClick={toggleMenu} className={`bi bi-list ${styles.menu}`}/>
 
-    background-color: #444;
 
-    display: flex;
-
-}
 
 .container>span:first-child {
     width: 100px;
@@ -181,3 +208,4 @@
     }
 
 }
+
