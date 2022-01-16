@@ -100,12 +100,62 @@
     box-shadow: 0 2px 4px 1px #555;
 
     width: 100%;
-    height: 70px;
+    height: 50px;
+
+}
+
+.button {
+    width: 100px;
+    height: 100%;
+
+    background-color: transparent;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+
+    position: absolute;
+    left: 50px;
+
+    z-index: 2;
+
+}
+
+.bg {
+    background-color: #000;
+    opacity: .2;
+
+    width: 100px;
+    height: 100%;
+
+    padding: 0 15px;
+
+    position: absolute;
+
+}
+
+.button>p {
+    margin-top: 15px;
+
+}
+
+.button>i {
+    font-size: 15px;
 
 }
 
 .containerStudent>p {
     margin-top: 15px;
+
+}
+
+.button:hover {
+    cursor: pointer;
+
+    color: #000;
 
 }
 
@@ -155,7 +205,7 @@
     .menu {
         display: none;
 
-        height: 20%;
+        height: 29%;
         width: 55%;
 
         background-color: #FFF;
@@ -205,6 +255,30 @@
         position: absolute;
         top: 0;
         right: 5px;
+
+    }
+
+    .menuAux {
+        box-shadow: none;
+
+        top: 50px;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: right;
+        align-items: normal;
+
+        height: fit-content;
+
+        position: absolute;
+
+
+    }
+
+    .button {
+        position: static;
 
     }
 
