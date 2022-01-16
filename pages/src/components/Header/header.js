@@ -40,7 +40,7 @@ export default function Header() {
                     <i className="bi bi-caret-down-fill" style={{ marginLeft: "10px" }} />
                 </div>
                 <div className={styles.containerStudent}>
-                    { studentName.toUpperCase() }
+                    <p>{ studentName.toUpperCase() }</p>
                     <i className={`bi bi-person-circle ${styles.loginImage}`} />
                 </div>
                 {/*<div className={styles.menuAux}>*/}

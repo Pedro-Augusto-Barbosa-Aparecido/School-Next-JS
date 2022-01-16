@@ -104,6 +104,11 @@
 
 }
 
+.containerStudent>p {
+    margin-top: 15px;
+
+}
+
 .containerLanguage:hover, .icon:hover, .loginImage:hover {
     cursor: pointer;
 
@@ -121,7 +126,32 @@
 
 }
 
+@media (max-width: 600px) {
+    .containerStudent>p {
+        display: none;
+
+    }
+
+}
+
 @media (max-width: 950px) {
+    .containerStudent>p {
+        position: absolute;
+
+        top: 15px;
+        right: 50px;
+
+        margin: 0;
+
+        width: 150px;
+        height: 25px;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+
     .menu {
         display: none;
 
@@ -168,6 +198,13 @@
     .language {
         display: block;
         left: 90px;
+
+    }
+
+    .loginImage {
+        position: absolute;
+        top: 0;
+        right: 5px;
 
     }
 
